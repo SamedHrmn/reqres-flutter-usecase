@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:reqres_flutter_case/providers/users_provider.dart';
+import 'package:reqres_flutter_case/utilities/string_constant.dart';
 import 'package:reqres_flutter_case/widgets/user_card.dart';
 
 class HomeView extends ConsumerStatefulWidget {
@@ -31,6 +32,10 @@ class HomeViewState extends ConsumerState<HomeView> {
             if (usersState?.isLoading == true) {
               return const Center(
                 child: CircularProgressIndicator.adaptive(),
+              );
+            } else if (usersState?.hasError == true || usersState?.value == null) {
+              return const Center(
+                child: Text(StringConstant.generalErrorText),
               );
             }
 

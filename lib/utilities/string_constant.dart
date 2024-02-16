@@ -14,4 +14,6 @@ final class StringConstant {
   static const emailFieldRequiredText = 'Email field required.';
   static const passwordFieldRequiredText = 'Password field required.';
   static const emailIncorrectErrorText = 'Incorrect email format!';
+
+  static const generalErrorText = 'Something went wrong.';
 }

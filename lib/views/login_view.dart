@@ -103,7 +103,7 @@ class LoginViewState extends ConsumerState<LoginView> {
                   builder: (context) => const HomeView(),
                 ),
                 (route) => false);
-
+            //! BAD RESPONSE 400
             /*
                        if (formKey.currentState!.validate()) {
                         await ref.read(loginProvider.notifier).login(ref);
