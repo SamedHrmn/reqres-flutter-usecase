@@ -1,4 +1,4 @@
-# ReqRes API Flutter use-case
+# ReqRes API Flutter Use Case
 
 ### Known issues
 The reqres api auth endpoints I use only return the 400 code in response. Although I tried it with Postman, I did not get any results. I saw a message like "only certain users can register" as an error message. Please let me know if you know what the problem is.
